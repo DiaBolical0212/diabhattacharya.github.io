@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap');
+
+
+:root{
+	--main-background: #dddbdb9d;
+  --main2-background: #f5e4e4b0;
+  --main-test: #31dd48;
+	--main-fonts-color: rgb(0, 0, 0);
+	--main-decor-color:#ffffff;
+  --main-decor-hover: #48c6ef;
+    --main-header-background:#ffffff;
+	--main-font-family: 'KoHo', sans-serif;
+}
+
+
+*{
+	margin: 0; 
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+main{
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--main-background);
+}
+main2{
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--main2-background);
+}
+
+/*────────────────── 
+       header
+──────────────────*/
+
+header{
+	margin: 0 auto;
+	width: 100%;
+	height: 70px;
+	display: flex;
+    align-items: center; 
+	justify-content: space-around; 
+    background: transparent;
+	position: fixed;
+	top: 0;
+	transition: 0.3s;
+	z-index: 5;
+}
+.nav-show{
+	opacity: 0.25;
+}
+
+header:hover{
+	opacity: 1;
+	background: var(--main-header-background);
+}
+
+.logo img{
+	padding-top: 5px;
+	height: 50px;
+	cursor: pointer;
+}
+
+.nav-bar{
+	list-style:none;
+	position: relative;
+	display: inline-flex;
+}
+
+a.nav-link{
+	margin: 2px;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: var(--main-fonts-color);
+	font-family: var(--main-font-family);
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.nav-link:hover {
+	color:var(--main-decor-hover);
+    background: var(--main-decor-color);
+}
+
+/*──────────────────
+       home
+──────────────────*/
+
+#home{ 	
+	margin: auto;
+	height: 100vh;
+	color: var(--main-fonts-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+#home .filter{
+	background: url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg') no-repeat;
+	background-size: cover;
+	background-position:center;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	opacity:.30;
+}  
+
+/*──────────────────
+       pages
+──────────────────*/
+
+#pages{ 	
+	margin: auto;
+	height: 100vh;
+	color: var(--main-fonts-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+#pages .filter{
+	background: url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg') no-repeat;
+	background-size: cover;
+	background-position:center;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	opacity:.05;
+}  
+
+.white-box {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    margin:80px;
+    
+}
+code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+
+.intro {
+	text-align:center;
+    color: var(--main-fonts-color);
+	z-index: 1;
+	margin: auto;
+	padding: 20px;
+}
+
+.intro  p{
+    margin: 5px;
+	font-size:1.2rem;
+	font-family: var(--main-font-family);
+	text-align:center;
+}
+
+ h3{
+	padding-bottom: 15px;
+    letter-spacing: normal;
+    font-family: var(--main-font-family);
+	font-style: normal;
+	font-size: 60px;
+	color: var(--main-fonts-color);
+	text-shadow: 0px 0px 40px var(--main-decor-color);
+  text-decoration: none;
+}
+h2{
+	padding-bottom: 15px;
+  margin-left:10%;
+  margin-right:10%;
+    letter-spacing: normal;
+    font-family: var(--main-font-family);
+	font-style: normal;
+	font-size: 30px;
+	color: var(--main-fonts-color);
+	text-shadow: 0px 0px 40px var(--main-decor-color);
+}
+h4{
+	padding-bottom: 10px;
+  margin-left:10%;
+  margin-right:10%;
+    letter-spacing: normal;
+    font-family: var(--main-font-family);
+	font-style: normal;
+	font-size: 20px;
+	color: var(--main-fonts-color);
+	text-shadow: 0px 0px 40px var(--main-decor-color);
+}
+/*──────────────────
+      explanation
+──────────────────*/
+
+#explanation{
+	margin-top:100px;
+  margin-left:10%;
+  margin-right:10%;
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	text-align:center;
+	color: var(--main-fonts-color);
+}
+#explanation h3{
+    padding-top: 70px;
+}
+#explanation p{
+	font-family: var(--main-font-family);
+	font-size:1.2rem;
+	padding: 10px;
+  margin-left:20%;
+  margin-right:20%;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 10;
+  padding: 5px;
+  float: left;
+  width: 0%;
+  
+}
+
+
+
+
+
+
+/*──────────────────
+    social media
+──────────────────*/
+
+.social-media{
+	padding: 10px;
+	display: flex;
+	position: center;
+    align-items: space-around;
+	justify-content:center;
+}
+
+.social-media a {
+    margin: 10px;
+    font-size: 2rem;
+    text-align:center;
+    display: inline-block;
+	color: var(--main-fonts-color);
+}
+
+.social-media a i{
+	cursor: pointer;
+}
+
+.social-media  a:hover {
+	color: var(--main-decor-hover);
+	text-shadow: 0 0 50px var(--main-decor-color);
+}
+
+/*──────────────────
+      projects
+──────────────────*/
+
+#projects{
+	margin-top:100px;
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	text-align:center;
+	color: var(--main-fonts-color);
+ 
+
+}
+#projects h3{
+    padding-top: 70px;
+}
+#projects p{
+	font-family: var(--main-font-family);
+	font-size:1.2rem;
+	padding: 10px;
+}
+#projects a{
+	text-decoration: none;
+}
+
+.work{
+	display: flex; 
+	flex: 1;
+    flex-wrap: wrap;
+    justify-content:center;
+	align-items: center;
+	padding: 20px;
+}
+
+
+.card{
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	width: 200px;
+	height:260px;
+	border-radius:12px;
+    background:var(--main-decor-color);
+}
+
+.card img{
+	width: 100%;
+	height:80%;
+	border-radius:10px 10px 0px 0px;
+}
+
+.card .work-content{
+	text-align: center;
+	padding: 10px 5px;
+	font-size: 1rem;
+	color: var(--main-fonts-color);
+	font-family: var(--main-font-family);
+	cursor: pointer;
+}
+.card a{
+	text-decoration: none;
+}
+
+
+.card .work-content:hover{
+    color:var(--main-decor-hover);
+}
+
+.card:hover{
+	box-shadow: 0 0 1.5rem var(--main-decor-hover);
+}
+
+/*──────────────────
+      Contact
+──────────────────*/
+
+#contact{
+	margin: auto;
+	padding-bottom: 20px;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: var(--main-fonts-color);
+}
+	
+#contact p{
+	padding:10px;
+	text-align:center;
+	font-size:1.2rem;
+	font-family: var(--main-font-family);
+}
+
+/*────────────────── 
+       footer
+──────────────────*/
+
+footer {
+	width: 100%;
+	height: 100%;
+    background-color: var(--main-header-background);
+}
+
+.copyright {
+	color: #fff;
+	font-size: 1.2rem;
+	line-height: 40px;
+	text-align: center;
+}
+
+.copyright a{
+	color: #fff;
+	font-size: 1rem;
+	letter-spacing: 1px;
+    text-decoration: none;
+}
+
+
+/*──── hr ─────*/
+
+hr {
+    background: var(--main-decor-color);
+	margin: 2px;
+	height: 3px;
+	width: 150px;
+    border-radius:5px;
+	border: hidden;
+	margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+/*────────────────── 
+     Scrollbar
+──────────────────*/
+::-webkit-Scrollbar{
+    width: 5px; 
+	background: rgb(0, 0, 0);
+}
+::-webkit-Scrollbar-thumb{
+	border-radius: 10px;
+	background: var(--main-decor-color);
+	box-shadow: inset 0 0 20px var(--main-decor-color);
+}
+::-webkit-Scrollbar-track{
+	margin-top: 80px;
+	border-radius: 10px;
+}
+
+/*────────────────── 
+     hamburger
+──────────────────*/
+.hamburger {
+	display: none;
+}
+
+.hamburger div{
+	width: 30px;
+	height: 3px;
+	background: #dbdbdb;
+	margin: 5px;
+	transition:all 0.3s ease;
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+	opacity: 0;
+}
+
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
+}
+
+@keyframes navLinkFade{
+	from{
+		opacity:0;
+		transform: translatex(50px);
+	}
+	to{
+		opacity: 1;
+		transform:translatex(0px);
+	}
+}
+
+/*────────────────── 
+    media queries
+──────────────────*/
+
+@media only screen and (max-width: 1484px) and (min-width: 1214px) {
+	.work{
+        padding:20px 20%;
+    }
+}
+@media only screen and (max-width: 1214px) and (min-width: 1000px) {
+	.work{
+        padding:20px 12%;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+	#home, #projects, #contact, hinge.html#pages{
+        overflow-x: hidden;
+	}
+	header{
+		background-color: var(--main-decor-background);
+	}
+	.logo{
+		position:absolute;
+		top: 2px;
+		left: 30px;
+	}
+	.nav-show{
+		opacity: 0;
+	}	 
+	.nav-bar{
+		position:fixed;
+		top: -120px;
+		right:0;
+		width:50%;
+		height: 100vh;
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content:space-evenly;
+		background:var(--main-header-background);
+		transform:translatex(100%);
+		transition: transform 0.3s ease-in;
+		z-index: -1;
+	}
+	.hamburger{
+		position:absolute;
+		top: 17px;
+		right: 25%;
+		display: block;
+		cursor:pointer;
+		z-index: 5;
+	}	
+	.nav-bar li{
+		opacity:1;
+	}
+}
+
+.nav-active{
+	transform:translatex(0%);
+}
+
+@-webkit-keyframes glow {
+    to {
+         border-color: #fe8604;
+    -webkit-box-shadow: 0 0 5px #fe8604;
+       -moz-box-shadow: 0 0 5px #fe8604;
+            box-shadow: 0 0 5px #fe8604;
+    }
+}
+
+.myGlower {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid transparent;
+    -webkit-animation: glow 1.0s infinite alternate;  
+     -webkit-transition: border 1.0s linear, box-shadow 1.0s linear;
+       -moz-transition: border 1.0s linear, box-shadow 1.0s linear;
+            transition: border 1.0s linear, box-shadow 1.0s linear;
+    width: 90vw;
+    margin-left: auto;
+  margin-right: auto;
+    
+}
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
